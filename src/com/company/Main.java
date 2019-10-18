@@ -7,8 +7,8 @@ import javax.xml.bind.Unmarshaller;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
-import java.util.ArrayList;
 
+/*приложение, осуществляющее маршаллизацию/демаршаллизацию с использованием XML-файла и pojo*/
 public class Main {
 
     public static void main(String[] args) {
@@ -19,7 +19,6 @@ public class Main {
             // анонимный класс
             Schedule schedule = new Schedule() {
                 {
-
                     //добавление первый предмет
                     MarshallSchedule.Object obj = new MarshallSchedule.Object("Programming", "Friday", "Г312");
                     MarshallSchedule mS = new MarshallSchedule("Petrov P.P", "12", "30", obj);
